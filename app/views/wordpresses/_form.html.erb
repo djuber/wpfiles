@@ -1,0 +1,27 @@
+<%= form_for(wordpress) do |f| %>
+  <% if wordpress.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wordpress.errors.count, "error") %> prohibited this wordpress from being saved:</h2>
+
+      <ul>
+      <% wordpress.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :version %>
+    <%= f.text_field :version %>
+  </div>
+
+  <div class="field">
+    <%= f.label :release_date %>
+    <%= f.date_select :release_date %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

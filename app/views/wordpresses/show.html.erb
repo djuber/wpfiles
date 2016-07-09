@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @wordpress.version %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @wordpress.release_date %>
+</p>
+
+<%= link_to 'Edit', edit_wordpress_path(@wordpress) %> |
+<%= link_to 'Back', wordpresses_path %>
