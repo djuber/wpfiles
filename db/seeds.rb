@@ -8,6 +8,8 @@
 
 # automatically generated 
 
+Wordpress.destroy_all
+
 Wordpress.create!(version: "0.71-gold", release_date: "2003-06-09")
 Wordpress.create!(version: "1.0.1-miles", release_date: "2004-01-25")
 Wordpress.create!(version: "1.0.2-blakey", release_date: "2004-03-11")
