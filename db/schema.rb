@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20160709230842) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "core_files", force: :cascade do |t|
     t.string   "file_path"
     t.string   "mdsum"
