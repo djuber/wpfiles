@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160709193338) do
+ActiveRecord::Schema.define(version: 20160709230842) do
 
   create_table "core_files", force: :cascade do |t|
-    t.string   "file_name"
+    t.string   "file_path"
     t.string   "mdsum"
     t.integer  "size"
     t.text     "content"
