@@ -1,0 +1,2 @@
+class CoreFile < ApplicationRecord
+end

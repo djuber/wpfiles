@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>File name:</strong>
+  <%= @core_file.file_name %>
+</p>
+
+<p>
+  <strong>Mdsum:</strong>
+  <%= @core_file.mdsum %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @core_file.size %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @core_file.content %>
+</p>
+
+<%= link_to 'Edit', edit_core_file_path(@core_file) %> |
+<%= link_to 'Back', core_files_path %>

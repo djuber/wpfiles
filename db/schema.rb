@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160709192907) do
+ActiveRecord::Schema.define(version: 20160709193338) do
+
+  create_table "core_files", force: :cascade do |t|
+    t.string   "file_name"
+    t.string   "mdsum"
+    t.integer  "size"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "wordpresses", force: :cascade do |t|
     t.string   "version"
