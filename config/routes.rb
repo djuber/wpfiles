@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :core_files
-  resources :wordpresses, path: "wordpress"
+
+  resources :wordpresses, path: "wordpress" do
+    resources :core_files
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
